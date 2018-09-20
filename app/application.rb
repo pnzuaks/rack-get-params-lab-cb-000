@@ -29,7 +29,7 @@ class Application
       search_term = req.params["item"]
       resp.write handle_search(search_term)
             if @@items.include?(search_term) == false
-            @@cart.osearch_term
+            @@cart.push(search_term)
             resp.write "added #{search_term}"
             resp.write "#{search_term} is one of our items"
 
