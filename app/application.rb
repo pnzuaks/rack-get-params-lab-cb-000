@@ -33,7 +33,7 @@ class Application
             resp.write "added #{search_term}"
             resp.write "#{search_term} is one of our items"
             else
-           resp.write "added #{search_term}"
+           resp.write ""
             end
     else
       resp.write "Path Not Found"
