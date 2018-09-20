@@ -32,7 +32,9 @@ class Application
             @@cart.push(search_term)
             resp.write "added #{search_term}"
             resp.write "#{search_term} is one of our items"
-            write "added #{search_term}"
+
+          #   else
+          #  resp.write "added #{search_term}"
             end
     else
       resp.write "Path Not Found"
