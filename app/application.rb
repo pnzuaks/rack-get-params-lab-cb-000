@@ -31,6 +31,8 @@ class Application
             if @@items.include?(search_term) == false
             @@cart << search_term
             resp.write "added #{search_term}"
+            resp.write "#{search_term} is one of our items"
+
           #   else
           #  resp.write "added #{search_term}"
             end
